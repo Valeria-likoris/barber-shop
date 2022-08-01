@@ -1,0 +1,86 @@
+:root{
+    --font-family: 'Open Sans', sans-serif;
+    --font-family-secondary:'Raleway',sans-serif;
+
+    --primary-text-color:#303030;
+    --secondary-text-color:#555555;
+    --grey-text-color:#9DA4BD;
+
+    --accent-orange-color:#FF6C00;
+    --accent-white-color:#FFFFFF;
+    --suptitle-theme-dark:rgba(157, 164, 189, 0.6);
+    --form-color:rgba(157, 164, 189, 0.4);
+
+    --hero-bgc:rgba(25, 28, 38, 0.2);
+    --employees-bgc:#F7F7F7;
+    --form-bgc:#191C26;
+
+    --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+/*==========================Common style=================================*/
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+body{
+    font-family: var(--font-family);
+}
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    background-color: transparent;
+
+    cursor: pointer;
+    display: inline-block;
+}
+/*==========================Common style=================================*/
+
+/* ==============================Header======================================= */
