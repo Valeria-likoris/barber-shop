@@ -66,6 +66,9 @@ button {
 }
 body{
     font-family: var(--font-family);
+    font-size: 11px;
+    color: var(--primary-text-color);
+
 }
 .list {
     list-style: none;
@@ -76,11 +79,530 @@ body{
 }
 
 .button {
-    background-color: transparent;
+    display: block;
 
+    padding: 12px 20px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    
     cursor: pointer;
-    display: inline-block;
+    border: 1px solid var(--accent-orange-color);
+    border-radius: 25px;
+    background-color: transparent;
+}
+.modal-btn-theme-light {
+    color: var(--primary-text-color);
+}
+.modal-btn-theme-dark {
+    color: var(--accent-white-color);
+}
+.section{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.suptitle {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.suptitle::before{
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color:var(--primary-text-color);
+    content: '';
+    margin-right: 20px;
+}
+.suptitle-theme-dark {
+    color: var(--suptitle-theme-dark);
+}
+.instagram::before{
+    width: 60px;
+    height: 1px;
+    background-color: var(--primary-text-color);
+    content: '';
+    margin-right: 40px;
+}
+.title {
+    font-family: var(--font-family-secondary);
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+
+    letter-spacing: 0.05em;
+}
+.title-theme-light{
+    margin-bottom: 20px;
+}
+.title-theme-dark {
+    margin-bottom: 44px;
+    color: var(--accent-white-color);
+}
+.section-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.section-description-theme-light {
+    color: var(--secondary-text-color);
 }
 /*==========================Common style=================================*/
 
 /* ==============================Header======================================= */
+.page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* from the logo */
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #9DA4BD;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 71px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: var(--accent-white-color);
+
+}
+
+.contact-phone-number {
+    margin-left: auto;
+    margin-right: 40px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--accent-white-color);
+}
+
+/* ==============================Hero======================================= */
+.hero {}
+
+.hero-container {
+    display: flex;
+}
+.hero-left-side{
+    width: 100px;
+    /* because right-side = 1070+30px and container 1200px 
+    that's why 1200 - 1070+30=100px */
+}
+.hero-right-side{
+    padding-top: 272px;
+    padding-bottom: 206px;
+    padding-left: 100px;
+    flex-grow: 1;
+    background-image:linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('../images/hero/hero.jpg');
+    background-size: cover;
+    background-color: var(--primary-text-color);
+}
+
+.media-list {}
+
+.media-list-item {}
+
+.media-list-link {
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--primary-text-color);
+    
+    transform: rotate(-90deg);
+}
+
+.hero-title {
+    margin-bottom: 20px;
+    font-family:var(--font-family-secondary);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--accent-white-color);
+}
+.hero-section-description {
+    color: var(--grey-text-color);
+}
+
+.section-description-theme-dark {}
+/* ===============================ABOUT============================== */
+
+.section-about {
+   
+}
+
+.about-container { 
+    display: flex;
+    justify-content: space-between;
+}
+.about-left-side,
+.about-right-side{
+    flex-basis: calc((100%-30px)/2);
+}
+.about-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img-item {}
+
+.about-right-side{
+    padding-left: 34px;
+}
+.suptitle-theme-light {
+}
+
+.about-section-description {
+    margin-bottom: 20px;
+}
+
+
+
+.about-text {
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+
+
+/* =======================================Services========================================== */
+
+.section-services {
+    padding: 0px;
+}
+
+.services-container {
+    padding: 130px 55px;
+
+    background-image: url('../images/services/img.png');
+    background-color: #111319;
+    background-size: cover;
+}
+
+.services-table-wrapper{
+    display: flex;
+}
+.services-table {
+    flex-basis: 50%;
+    /* розмір на головній осі */
+    padding: 30px 40px;
+    margin-bottom: 50px;
+}
+.table-first{
+    background-image:linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.table-second{
+    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.services-table-row {
+    display: flex;
+    justify-content: space-between;
+}
+.services-table-row:not(:last-child) {
+    margin-bottom: 20px;
+}
+.services-table-name,
+.services-table-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    
+    color: var(--grey-text-color);
+}
+.services-btn{
+    margin: 0 auto;
+}
+
+
+/* =====================================Advantages============================================= */
+
+.section-advantages {}
+
+.advantages-container {
+    display: flex;
+    justify-content: space-between;
+}
+.advantages-left-side,
+.advantages-right-side{
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 370px;
+    /* 170+30+170 */
+    margin: 0 auto;
+}
+
+.advantages-list-item {
+    width: 170px;
+    min-height: 134px;
+    padding: 20px 21px;
+    background-color: #f7f7f7;
+}
+.advantages-list-item:not(:nth-child(even)){
+    margin-top: 30px;
+}
+
+.advantages-list-amount {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.advantages-list-description {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+}
+
+.advantages-section-description {
+    max-width: 460px;
+}
+
+/* =================================Employees==================================================== */
+
+.section-employees {
+    background-color: var(--employees-bgc);
+    padding-top: 118px;
+}
+
+.employees-container {
+    
+}
+
+.employees-suptitle {}
+
+.employees-container .employees-title {
+    margin-bottom: 44px;
+}
+
+.list-employees{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.employees-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.employees-list-img {}
+
+.employees-list-content-wrapper{
+    padding-top: 30px;
+}
+
+.employees-name {
+    margin-bottom: 8px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.employyes-position {
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.35;
+    
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-orange-color);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-item {
+    
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    
+    border-radius: 50%;
+    
+    background-color: var(--accent-white-color);
+}
+
+.social-list-icon {
+    fill: var(--primary-text-color);
+}
+.social-list-icon:hover,
+.social-list-icon:focus{
+    fill: var(--accent-orange-color);
+}
+/* =====================================Portfolio============================================= */
+
+.section-portfolio {}
+
+.portfolio-container {}
+
+.title-portfolio {}
+
+.visually-hidden {}
+
+.portfolio-suptitle {
+    margin-bottom: 44px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-list-item {
+    flex-basis: calc((100% - 120px) / 4);
+}
+
+.portfolio-list-img {}
+
+/* =========================================Contact form===================================== */
+
+.contact-form-section {}
+
+.contact-form-title {}
+
+/* ========================================Contact info========================================= */
+
+.contact-info-section {}
+
+.contact-info-title {}
+
+.contact-info-list {}
+
+.contact-info-list-item {}
+
+.contact-info-list-link,
+.contact-info-date{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+   
+    letter-spacing: 0.02em;
+
+    color: var(--grey-text-color);
+}
+
+.suptitle-contact-info {
+    font-weight: 600;
+    line-height: 1.36;
+       
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--accent-white-color);
+}
+
+
+
+/* ====================================Footer================================================= */
+
+.footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyrigh {
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--grey-text-color);
+}
+.media-list{
+    display: flex;
+    gap: 40px;
+}
+.footer-media-list-link{
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    
+    color: var(--primary-text-color);
+}
+.instagram{
+    display: flex;
+    align-items: center;
+}
